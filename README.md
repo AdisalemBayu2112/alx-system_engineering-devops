@@ -1,2 +1,1 @@
-# alx-system_engineering-devops
-My shell basics project
+i am working now
