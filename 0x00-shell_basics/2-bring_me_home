@@ -1,4 +1,2 @@
-#!/bin/bash/echo <directory>
-cd <directory>
 #!/bin/bash
 cd ~
