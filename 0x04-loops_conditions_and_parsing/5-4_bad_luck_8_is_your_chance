@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #Prints Best School ten times to stdout using a while loop. On the 4th time, prints bad luck and on the 8th time. print good luck and a new line
 i=1
-while ((i<10)); do 
+while ((i<=10)); do 
 	if [ "$i" == 4 ]; then
 	   	echo bad luck
         elif [ "$i" == 8 ]; then
