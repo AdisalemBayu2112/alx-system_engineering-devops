@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#Prints Best School ten times to stdout using a while loop. On the 4th time, prints bad luck and on the 8th time. print good luck and a new line
+i=0
+while ((i<10)); do 
+	if [ "$i" == 4 ]; then
+	   	echo bad luck
+        elif [ "$i" == 8 ]; then
+                echo good luck
+	else 
+		echo Best School 
+	fi
+	i=$((i+1))
+done
