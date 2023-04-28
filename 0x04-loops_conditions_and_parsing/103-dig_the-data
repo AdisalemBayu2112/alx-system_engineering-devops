@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# This script parses an Apache log access file by ip  and HTTP
-address using awk.
-awk 'BEGIN { FS = " " } ; { print $1, $9 }' apache-access.log | sort -b | uniq -c | sort -b
+#Groups visitors by IP and HTTP status code, and displays this data.
+
+awk '{ printf "%s %s\n", $1, $9 }' "apache-access.log" | sort | uniq -c | sort -nr
